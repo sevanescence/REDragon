@@ -17,7 +17,7 @@ drop-location-format: "&bX:%x%&7, &bY:%y%&7, &bZ:%z%"
 ```
 
 logic:
-```VisualBasic
+```vb
 on mob death:
   mob isnt an ender dragon?:
     return

@@ -13,5 +13,5 @@ config.yml
 egg-drop-message: "&8[&dRE:Dragon&8] &7The dragon egg has dropped at &b%drop-location%&7!"
 
 # this is what the coordinates will look like
-drop-location-format: "&bX:%x%&7, &bY:%y%&7, &bZ:%y%"
+drop-location-format: "&bX:%x%&7, &bY:%y%&7, &bZ:%z%"
 ```

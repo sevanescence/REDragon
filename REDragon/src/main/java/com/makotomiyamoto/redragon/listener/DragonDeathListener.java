@@ -67,7 +67,7 @@ public final class DragonDeathListener implements Listener {
             String locFormat = plugin.getConfig().getString("drop-location-format");
             if (locFormat == null) {
                 locFormat = "&b%x%&7X, &b%y%&7Y, &b%y%&7Z";
-                plugin.getConfig().set("drop-location-format", "&bX:%x%&7, &bY:%y%&7, &bZ:%y%");
+                plugin.getConfig().set("drop-location-format", "&bX:%x%&7, &bY:%y%&7, &bZ:%z%");
                 plugin.saveConfig();
             }
 

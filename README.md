@@ -15,3 +15,6 @@ egg-drop-message: "&8[&dRE:Dragon&8] &7The dragon egg has dropped at &b%drop-loc
 # this is what the coordinates will look like
 drop-location-format: "&bX:%x%&7, &bY:%y%&7, &bZ:%z%"
 ```
+
+##### todo
+- [ ] check if ender dragon death is the first by checking if the egg has spawned along 0 y 0

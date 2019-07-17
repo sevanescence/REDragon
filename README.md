@@ -18,3 +18,4 @@ drop-location-format: "&bX:%x%&7, &bY:%y%&7, &bZ:%z%"
 
 ##### todo
 - [ ] check if ender dragon death is the first by checking if the egg has spawned along 0 y 0
+- [ ] check if the last block is a non-solid block i.e. water, lava, rather than just air

@@ -1,2 +1,3 @@
 com\makotomiyamoto\redragon\REDragon.class
 com\makotomiyamoto\redragon\listener\DragonDeathListener.class
+com\makotomiyamoto\redragon\listener\WorldChangeListener.class

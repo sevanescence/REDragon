@@ -1,11 +1,20 @@
-#######################
-# RE: DRAGON v1.0.0   #
-#######################
-# configuration file  #
-#######################
+########################
+#  RE: DRAGON v1.1.0   #
+########################
+#  configuration file  #
+########################
 
 # leave this empty, or write "null", to disable
 egg-drop-message: "&8[&dRE:Dragon&8] &7The dragon egg has dropped at &b%drop-location%&7!"
 
 # this is what the coordinates will look like
-drop-location-format: "&bX:%x%&7, &bY:%y%&7, &bZ:%y%"
+drop-location-format: "&bX:%x%&7, &bY:%y%&7, &bZ:%z%"
+
+# set this to true if the first dragon on your
+# server is already dead. if false, the plugin
+# will check if there are end portals
+# already in the end portal frame, then set it
+# to true. This is to avoid a bug where the
+# dragon egg will drop twice when the first
+# ender dragon dies.
+default-dragon-dead: false

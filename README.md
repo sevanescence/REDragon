@@ -14,6 +14,15 @@ egg-drop-message: "&8[&dRE:Dragon&8] &7The dragon egg has dropped at &b%drop-loc
 
 # this is what the coordinates will look like
 drop-location-format: "&bX:%x%&7, &bY:%y%&7, &bZ:%z%"
+
+# set this to true if the first dragon on your
+# server is already dead. if false, the plugin
+# will check if there are end portals
+# already in the end portal frame, then set it
+# to true. This is to avoid a bug where the
+# dragon egg will drop twice when the first
+# ender dragon dies.
+default-dragon-dead: false
 ```
 
 # Changelog
@@ -29,6 +38,10 @@ RE:Dragon released.
 Dragpm Egg Drop - Location Change
 + Dragon eggs are placed on at the top of end exit portals if one isn't already present.
 + Bug patched where dragon egg will drop twice from first ender dragon.
++ default-dragon-dead setting added to config.
+  set this to true if the first ender dragon on your server is already dead.
+  if it remains false, it will be set to true if there are end portals in
+  the end.
 ```
 
 # todo

@@ -24,6 +24,12 @@ RE:Dragon released.
 + Configurable egg drop message with drop location placeholder.
 + Configurable drop location placeholder format with x, y, and z coordinates.
 ```
+### 1.1
+```diff
+Dragpm Egg Drop - Location Change
++ Dragon eggs are placed on at the top of end exit portals if one isn't already present.
++ Patch fixed where dragon egg will not drop twice from first ender dragon.
+```
 
 # todo
 - [ ] check if ender dragon death is the first by checking if the egg has spawned along 0 y 0

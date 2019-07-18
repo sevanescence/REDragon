@@ -28,7 +28,7 @@ RE:Dragon released.
 ```diff
 Dragpm Egg Drop - Location Change
 + Dragon eggs are placed on at the top of end exit portals if one isn't already present.
-+ Patch fixed where dragon egg will not drop twice from first ender dragon.
++ Bug patched where dragon egg will not drop twice from first ender dragon.
 ```
 
 # todo

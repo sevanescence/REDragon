@@ -3,11 +3,11 @@ RE:Dragon allows ender dragon eggs to drop from all ender dragon deaths after th
 
 config.yml
 ```yml
-#######################
-# RE: DRAGON v1.0.0   #
-#######################
-# configuration file  #
-#######################
+########################
+#  RE: DRAGON v1.1.0   #
+########################
+#  configuration file  #
+########################
 
 # leave this empty, or write "null", to disable
 egg-drop-message: "&8[&dRE:Dragon&8] &7The dragon egg has dropped at &b%drop-location%&7!"

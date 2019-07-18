@@ -27,7 +27,7 @@ public final class WorldChangeListener implements Listener {
 
         Location loc = new Location(event.getPlayer().getWorld(), 0, 0, 0);
 
-        for (int i = 0; i < 255; i++) {
+        for (int i = 0; i < 256; i++) {
 
             if (loc.add(0, i, 0).getBlock().getType().equals(Material.BEDROCK) &&
                     loc.add(1, 0, 1).getBlock().getType().equals(Material.END_PORTAL)) {

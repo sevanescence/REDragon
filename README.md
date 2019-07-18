@@ -19,7 +19,10 @@ drop-location-format: "&bX:%x%&7, &bY:%y%&7, &bZ:%z%"
 # Changelog
 ### 1.0
 ```diff
-+ RE:Dragon released.
+RE:Dragon released.
++ Dragon Eggs are placed beneath ender dragons upon death.
++ Configurable egg drop message with drop location placeholder.
++ Configurable drop location placeholder format with x, y, and z coordinates.
 ```
 
 # todo

@@ -35,7 +35,7 @@ RE:Dragon released.
 ```
 ### 1.1
 ```diff
-Dragpm Egg Drop - Location Change
+Dragon Egg Drop - Location Change
 + Dragon eggs are placed on at the top of end exit portals if one isn't already present.
 + Bug patched where dragon egg will drop twice from first ender dragon.
 + default-dragon-dead setting added to config.
@@ -43,9 +43,11 @@ Dragpm Egg Drop - Location Change
   if it remains false, it will be set to true if there are end portals in
   the end.
 ```
+### 1.1.1
+```diff
+- removed dragon egg dropping on end exit portal frame
+```
 
 # todo
-- [ ] check if ender dragon death is the first by checking if the egg has spawned along 0 y 0
-- [ ] check if the last block is a non-solid block i.e. water, lava, rather than just air
 - [ ] add world placeholder
 - [ ] play sound effect when egg is dropped

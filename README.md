@@ -45,6 +45,7 @@ Dragon Egg Drop - Location Change
 ```
 ### 1.1.1
 ```diff
+1.1 Patch
 - removed dragon egg dropping on end exit portal frame
 ```
 

@@ -5,7 +5,6 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.block.Biome;
 import org.bukkit.entity.EnderDragon;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -35,51 +34,20 @@ public final class DragonDeathListener implements Listener {
 
         Location coords = event.getEntity().getLocation();
 
-        boolean runDropLoop = true;
-
-        if (event.getEntity().getWorld().getBiome(0, 0).equals(Biome.THE_END)) {
-
-            Location loc = new Location(event.getEntity().getWorld(), 0, 0, 0);
-
-            while (loc.getBlockY() < 255) {
-
-                if (loc.getBlock().getType().equals(Material.BEDROCK) &&
-                        loc.add(0, 1, 0).getBlock().getType().equals(Material.AIR)) {
-                    loc.add(0, 1, 0).getBlock().setType(Material.DRAGON_EGG);
-                    coords = loc.add(0, 1, 0);
-                    runDropLoop = false;
-                    break;
-                }
-
-                loc.setY(loc.getBlockY() + 1);
-
-            }
-
-        }
-
-        // dragon egg save added in 1.1
-           // added to ensure the dragon
-           // egg is safe if the ender
-           // dragon is slain in the void
-        if (coords.getBlockY() < 1 && runDropLoop) {
+        if (coords.getBlockY() < 1) {
 
             coords.setY(0);
-            coords.getBlock().setType(Material.OBSIDIAN);
-            coords.add(0, 1, 0).getBlock().setType(Material.DRAGON_EGG);
+            coords.add(0, 1, 0).getBlock().setType(Material.OBSIDIAN);
+            coords.add(0, 2, 0).getBlock().setType(Material.DRAGON_EGG);
 
         }
 
-        while (coords.getBlockY() > 0 && runDropLoop) {
+        while (coords.getBlockY() > 0) {
 
             if (coords.getBlockY() == 1) {
 
                 coords.setY(coords.getBlockY() - 1);
 
-                // extra block conditions added in 1.1
-                   // added to ensure dragon egg does
-                   // not spawn on fragile or liquid
-                   // blocks to ensure it wont fall
-                   // into the void <3
                 if (coords.getBlock().getType().equals(Material.AIR) ||
                         coords.getBlock().getType().equals(Material.WATER) ||
                         coords.getBlock().getType().equals(Material.LAVA) ||

@@ -1,5 +1,5 @@
 name: REDragon
-version: 1.0.0
+version: 1.1.1
 main: com.makotomiyamoto.redragon.REDragon
 description: "Drops an Ender Dragon Egg upon ender dragon death after the first ender dragon death."
 api-version: 1.13

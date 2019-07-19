@@ -17,7 +17,7 @@ public final class REDragon extends JavaPlugin {
 
             this.getServer().getPluginManager().registerEvents(new WorldChangeListener(this), this);
 
-            System.out.println("[RE:Dragon v1.0.0] Default dragon not presumed dead. Activating portal check.");
+            System.out.println("[RE:Dragon v1.1.1] Default dragon not presumed dead. Activating portal check.");
 
         }
 
